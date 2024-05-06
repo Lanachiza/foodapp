@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Terrible Juan</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: #000;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+        main {
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <a href="#">Cuenta</a>
+                <ul>
+                    <li><a href="pagina-cuenta.html">Mi Cuenta</a></li>
+                    <li><a href="historial-pedidos.html">Historial de Pedidos</a></li>
+                    <li><a href="wallet.html">Wallet</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                    <li><a href="promociones.html">Promociones</a></li>
+                    <li><a href="cerrar-sesion.html">Cerrar Sesión</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h1>El Terrible Juan</h1>
+        <h2>Menú</h2>
+        <ul>
+            <li><img src="espresso_doble.jpg" alt="Espresso doble"><span>Espresso doble - $35</span><button onclick="addToCart('Espresso doble', 35)">Agregar al carrito</button></li>
+            <li><img src="macchiato.jpg" alt="Macchiato"><span>Macchiato - $37</span><button onclick="addToCart('Macchiato', 37)">Agregar al carrito</button></li>
+            <li><img src="espresso_americano.jpg" alt="Espresso americano"><span>Espresso americano - $38</span><button onclick="addToCart('Espresso americano', 38)">Agregar al carrito</button></li>
+            <li><img src="capuccino.jpg" alt="Capuccino"><span>Capuccino - $42</span><button onclick="addToCart('Capuccino', 42)">Agregar al carrito</button></li>
+            <li><img src="moka.jpg" alt="Moka"><span>Moka - $45</span><button onclick="addToCart('Moka', 45)">Agregar al carrito</button></li>
+            <li><img src="latte_caramelo.jpg" alt="Latte caramelo"><span>Latte caramelo - $60</span><button onclick="addToCart('Latte caramelo', 60)">Agregar al carrito</button></li>
+            <li><img src="moka_blanco.jpg" alt="Moka blanco"><span>Moka blanco - $60</span><button onclick="addToCart('Moka blanco', 60)">Agregar al carrito</button></li>
+            <li><img src="chai.jpg" alt="Chai"><span>Chai - $65</span><button onclick="addToCart('Chai', 65)">Agregar al carrito</button></li>
+            <li><img src="chocolate.jpg" alt="Chocolate"><span>Chocolate - $45</span><button onclick="addToCart('Chocolate', 45)">Agregar al carrito</button></li>
+            <li><img src="matcha.jpg" alt="Matcha"><span>Matcha - $65</span><button onclick="addToCart('Matcha', 65)">Agregar al carrito</button></li>
+            <li><img src="taro.jpg" alt="Taro"><span>Taro - $55</span><button onclick="addToCart('Taro', 55)">Agregar al carrito</button></li>
+            <li><img src="te.jpg" alt="Te"><span>Te - $35</span><button onclick="addToCart('Te', 35)">Agregar al carrito</button></li>
+            <li><img src="v60.jpg" alt="V60"><span>V60 - $60</span><button onclick="addToCart('V60', 60)">Agregar al carrito</button></li>
+            <li><img src="chemex.jpg" alt="Chemex"><span>Chemex - $60</span><button onclick="addToCart('Chemex', 60)">Agregar al carrito</button></li>
+            <li><img src="kalita.jpg" alt="Kalita"><span>Kalita - $60</span><button onclick="addToCart('Kalita', 60)">Agregar al carrito</button></li>
+            <li><img src="prensa_francesa.jpg" alt="Prensa francesa"><span>Prensa francesa - $60</span><button onclick="addToCart('Prensa francesa', 60)">Agregar al carrito</button></li>
+            <li><img src="aeropress.jpg" alt="Aeropress"><span>Aeropress - $60</span><button onclick="addToCart('Aeropress', 60)">Agregar al carrito</button></li>
+            <li><img src="iced_coffee.jpg" alt="Iced coffee"><span>Iced coffee - $45</span><button onclick="addToCart('Iced coffee', 45)">Agregar al carrito</button></li>
+            <li><img src="iced_latte.jpg" alt="Iced latte"><span>Iced latte - $52</span><button onclick="addToCart('Iced latte', 52)">Agregar al carrito</button></li>
+            <li><img src="iced_latte_caramelo.jpg" alt="Iced latte caramelo"><span>Iced latte caramelo - $62</span><button onclick="addToCart('Iced latte caramelo', 62)">Agregar al carrito</button></li>
+            <li><img src="iced_taro.jpg" alt="Iced taro"><span>Iced taro - $65</span><button onclick="addToCart('Iced taro', 65)">Agregar al carrito</button></li>
+            <li><img src="chocolate_frio.jpg" alt="Chocolate frío"><span>Chocolate frío - $50</span><button onclick="addToCart('Chocolate frío', 50)">Agregar al carrito</button></li>
+            <li><img src="chai_frio.jpg" alt="Chai frío"><span>Chai frío - $70</span><button onclick="addToCart('Chai frío', 70)">Agregar al carrito</button></li>
+            <li><img src="matcha_frio.jpg" alt="Matcha frío"><span>Matcha frío - $70</span><button onclick="addToCart('Matcha frío', 70)">Agregar al carrito</button></li>
+            <li><img src="agua_tonica.jpg" alt="Agua tónica"><span>Agua tónica - $25</span><button onclick="addToCart('Agua tónica', 25)">Agregar al carrito</button></li>
+            <li><img src="agua_mineral.jpg" alt="Agua mineral"><span>Agua mineral - $25</span><button onclick="addToCart('Agua mineral', 25)">Agregar al carrito</button></li>
+            <li><img src="brewtal_coldbrew.jpg" alt="Brewtal coldbrew"><span>Brewtal coldbrew - $65</span><button onclick="addToCart('Brewtal coldbrew', 65)">Agregar al carrito</button></li>
+            <li><img src="felix_schorles.jpg" alt="Felix schorles"><span>Felix schorles - $40</span><button onclick="addToCart('Felix schorles', 40)">Agregar al carrito</button></li>
+            <li><img src="trenza_de_philadelphia.jpg" alt="Trenza de Philadelphia"><span>Trenza de Philadelphia - $40</span><button onclick="addToCart('Trenza de Philadelphia', 40)">Agregar al carrito</button></li>
+            <li><img src="rol_de_nutella.jpg" alt="Rol de nutella"><span>Rol de nutella - $50</span><button onclick="addToCart('Rol de nutella', 50)">Agregar al carrito</button></li>
+            <li><img src="brownie.jpg" alt="Brownie"><span>Brownie - $40</span><button onclick="addToCart('Brownie', 40)">Agregar al carrito</button></li>
+            <li><img src="polvoron.jpg" alt="Polvorón"><span>Polvorón - $10</span><button onclick="addToCart('Polvorón', 10)">Agregar al carrito</button></li>
+            <li><img src="cheesecake_de_nutella.jpg" alt="Cheesecake de nutella"><span>Cheesecake de nutella - $65</span><button onclick="addToCart('Cheesecake de nutella', 65)">Agregar al carrito</button></li>
+            <li><img src="pay_de_datal.jpg" alt="Pay de dátil"><span>Pay de dátil - $65</span><button onclick="addToCart('Pay de dátil', 65)">Agregar al carrito</button></li>
+            <li><img src="pay_de_limon.jpg" alt="Pay de limón"><span>Pay de limón - $65</span><button onclick="addToCart('Pay de limón', 65)">Agregar al carrito</button></li>
+            <li><img src="pay_de_manzana.jpg" alt="Pay de manzana"><span>Pay de manzana - $65</span><button onclick="addToCart('Pay de manzana', 65)">Agregar al carrito</button></li>
+            <li><img src="bisquet.jpg" alt="Bisquet"><span>Bisquet - $65</span><button onclick="addToCart('Bisquet', 65)">Agregar al carrito</button></li>
+            <li><img src="fruitbowl.jpg" alt="Fruitbowl"><span>Fruitbowl - $72</span><button onclick="addToCart('Fruitbowl', 72)">Agregar al carrito</button></li>
+            <li><img src="emparedado_de_serrano.jpg" alt="Emparedado de serrano"><span>Emparedado de serrano - $75</span><button onclick="addToCart('Emparedado de serrano', 75)">Agregar al carrito</button></li>
+            <li><img src="emparedado_de_roast_beef.jpg" alt="Emparedado de roast beef"><span>Emparedado de roast beef - $75</span><button onclick="addToCart('Emparedado de roast beef', 75)">Agregar al carrito</button></li>
+            <li><img src="emparedado_canadiense.jpg" alt="Emparedado canadiense"><span>Emparedado canadiense - $75</span><button onclick="addToCart('Emparedado canadiense', 75)">Agregar al carrito</button></li>
+            <li><img src="emparedado_vegetariano.jpg" alt="Emparedado vegetariano"><span>Emparedado vegetariano - $75</span><button onclick="addToCart('Emparedado vegetariano', 75)">Agregar al carrito</button></li>
+            <li><img src="emparedado_aguacate_y_queso_de_cabra.jpg" alt="Emparedado aguacate y queso de cabra"><span>Emparedado aguacate y queso de cabra - $75</span><button onclick="addToCart('Emparedado aguacate y queso de cabra', 75)">Agregar al carrito</button></li>
+            <li><img src="molletes_veganos.jpg" alt="Molletes veganos"><span>Molletes veganos - $80</span><button onclick="addToCart('Molletes veganos', 80)">Agregar al carrito</button></li>
+            <li><img src="molletes_4_quesos.jpg" alt="Molletes 4 quesos"><span>Molletes 4 quesos - $90</span><button onclick="addToCart('Molletes 4 quesos', 90)">Agregar al carrito</button></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FoodTiesaDelivery</p>
+    </footer>
+
+    <script>
+        function addToCart(product, price) {
+            alert("Añadido al carrito: " + product + " - $" + price);
+        }
+    </script>
+
+</body>
+</html>

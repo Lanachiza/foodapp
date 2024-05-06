@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Tacos Jorgillo</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: #000;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+        main {
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        li img {
+            width: 50px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <a href="#">Cuenta</a>
+                <ul>
+                    <li><a href="pagina-cuenta.html">Mi Cuenta</a></li>
+                    <li><a href="historial-pedidos.html">Historial de Pedidos</a></li>
+                    <li><a href="wallet.html">Wallet</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                    <li><a href="promociones.html">Promociones</a></li>
+                    <li><a href="cerrar-sesion.html">Cerrar Sesión</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Menú de Tacos Jorgillo</h1>
+        <ul>
+            <li>
+                <img src="taco_de_canasta.jpg" alt="Taco de canasta">
+                <span>Taco de canasta $14 (chicharron, frijol, mole, picadillo, papa)</span>
+                <button onclick="addToCart('Taco de canasta', 14)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="lonches.jpg" alt="Lonches">
+                <span>Lonches $43 (lomo, pierna, jamon, frijoles, panela)</span>
+                <button onclick="addToCart('Lonches', 43)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="chilaquiles.jpg" alt="Chilaquiles">
+                <span>Chilaquiles $45 (verdes, rojos)</span>
+                <button onclick="addToCart('Chilaquiles', 45)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="gorditas.jpg" alt="Gorditas">
+                <span>Gorditas $30 (chicharron, lomo)</span>
+                <button onclick="addToCart('Gorditas', 30)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="omellete.jpg" alt="Omellete">
+                <span>Omellete $45</span>
+                <button onclick="addToCart('Omellete', 45)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="burrito_sencillo.jpg" alt="Burrito sencillo">
+                <span>Burrito sencillo $70</span>
+                <button onclick="addToCart('Burrito sencillo', 70)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="burrito_yamato.jpg" alt="Burrito yamato">
+                <span>Burrito yamato $85</span>
+                <button onclick="addToCart('Burrito yamato', 85)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="burrito_vegetariano.jpg" alt="Burrito vegetariano">
+                <span>Burrito vegetariano $65</span>
+                <button onclick="addToCart('Burrito vegetariano', 65)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="maki_californa.jpg" alt="Maki californa">
+                <span>Maki californa $105</span>
+                <button onclick="addToCart('Maki californa', 105)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="philadelphia_maki.jpg" alt="Philadelphia maki">
+                <span>Philadelphia maki $110</span>
+                <button onclick="addToCart('Philadelphia maki', 110)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="empanizado_maki.jpg" alt="Empanizado maki">
+                <span>Empanizado maki $110</span>
+                <button onclick="addToCart('Empanizado maki', 110)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="isaac_roll.jpg" alt="Isaac roll">
+                <span>Isaac roll $180</span>
+                <button onclick="addToCart('Isaac roll', 180)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="tempura_spicy.jpg" alt="Tempura spicy">
+                <span>Tempura spicy $180</span>
+                <button onclick="addToCart('Tempura spicy', 180)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="yamato.jpg" alt="Yamato">
+                <span>Yamato $180</span>
+                <button onclick="addToCart('Yamato', 180)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="rollo_del_mes.jpg" alt="Rollo del mes">
+                <span>Rollo del mes $180</span>
+                <button onclick="addToCart('Rollo del mes', 180)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="sashimi.jpg" alt="Sashimi">
+                <span>Sashimi $140</span>
+                <button onclick="addToCart('Sashimi', 140)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="akami.jpg" alt="Akami">
+                <span>Akami $160</span>
+                <button onclick="addToCart('Akami', 160)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="yakimeshi.jpg" alt="Yakimeshi">
+                <span>Yakimeshi $110</span>
+                <button onclick="addToCart('Yakimeshi', 110)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="yakimeshi_especial.jpg" alt="Yakimeshi especial">
+                <span>Yakimeshi especial $110</span>
+                <button onclick="addToCart('Yakimeshi especial', 110)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="yakimeshi_yamato.jpg" alt="Yakimeshi yamato">
+                <span>Yakimeshi yamato $155</span>
+                <button onclick="addToCart('Yakimeshi yamato', 155)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="kushiage_de_queso.jpg" alt="Kushiage de queso">
+                <span>Kushiage de queso $90</span>
+                <button onclick="addToCart('Kushiage de queso', 90)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="rollito_primavera.jpg" alt="Rollito primavera">
+                <span>Rollito primavera $30</span>
+                <button onclick="addToCart('Rollito primavera', 30)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="edame_al_vapor.jpg" alt="Edame al vapor">
+                <span>Edame al vapor $65</span>
+                <button onclick="addToCart('Edame al vapor', 65)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="edame_especial.jpg" alt="Edame especial">
+                <span>Edame especial $85</span>
+                <button onclick="addToCart('Edame especial', 85)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="gelato_de_matcha.jpg" alt="Gelato de matcha">
+                <span>Gelato de matcha $65</span>
+                <button onclick="addToCart('Gelato de matcha', 65)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="arroz_jazmin.jpg" alt="Arroz jazmin">
+                <span>Arroz jazmin $40</span>
+                <button onclick="addToCart('Arroz jazmin', 40)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="kombucha.jpg" alt="Kombucha">
+                <span>Kombucha $60</span>
+                <button onclick="addToCart('Kombucha', 60)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="calpico.jpg" alt="Calpico">
+                <span>Calpico $36</span>
+                <button onclick="addToCart('Calpico', 36)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="refresco_coca.jpg" alt="Refresco coca">
+                <span>Refresco coca $30</span>
+                <button onclick="addToCart('Refresco coca', 30)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="jaztea.jpg" alt="Jaztea">
+                <span>Jaztea $25</span>
+                <button onclick="addToCart('Jaztea', 25)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="aguas_de_sabor.jpg" alt="Aguas de sabor">
+                <span>Aguas de sabor $24</span>
+                <button onclick="addToCart('Aguas de sabor', 24)">Agregar al carrito</button>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FoodTiesaDelivery</p>
+    </footer>
+
+    <script>
+        function addToCart(itemName, itemPrice) {
+            console.log(`Añadir "${itemName}" al carrito por $${itemPrice}`);
+        }
+    </script>
+
+</body>
+</html>

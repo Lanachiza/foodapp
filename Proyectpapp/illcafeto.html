@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'l Caffeto</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: #000;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+        main {
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        li img {
+            width: 50px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .add-to-cart {
+            margin-left: auto;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <a href="#">Cuenta</a>
+                <ul>
+                    <li><a href="pagina-cuenta.html">Mi Cuenta</a></li>
+                    <li><a href="historial-pedidos.html">Historial de Pedidos</a></li>
+                    <li><a href="wallet.html">Wallet</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                    <li><a href="promociones.html">Promociones</a></li>
+                    <li><a href="cerrar-sesion.html">Cerrar Sesión</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>I'l Caffeto</h1>
+        <h2>Menú</h2>
+        <ul>
+            <li><img src="espresso.jpg" alt="Espresso"><span>Espresso - $39</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="espresso_ristretto.jpg" alt="Espresso ristretto"><span>Espresso ristretto - $39</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="espresso_doppio.jpg" alt="Espresso doppio"><span>Espresso doppio - $39</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="espresso_macchiato.jpg" alt="Espresso macchiato"><span>Espresso macchiato - $41</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="espresso_macchiato_doble.jpg" alt="Espresso macchiato doble"><span>Espresso macchiato doble - $45</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="americano.jpg" alt="Americano"><span>Americano - $48</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="americano_con_leche.jpg" alt="Americano con leche"><span>Americano con leche - $50</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="long_black.jpg" alt="Long black"><span>Long black - $43</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="cafe_de_olla.jpg" alt="Cafe de olla"><span>Cafe de olla - $48</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="capuccino.jpg" alt="Capuccino"><span>Capuccino - $60</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="latte.jpg" alt="Latte"><span>Latte - $65</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="capuccino_nutella.jpg" alt="Capuccino nutella"><span>Capuccino nutella - $66</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="latte_vainilla.jpg" alt="Latte vainilla"><span>Latte vainilla - $66</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="latte_cajeta.jpg" alt="Latte cajeta"><span>Latte cajeta - $66</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="latte_caramelo.jpg" alt="Latte caramelo"><span>Latte caramelo - $66</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="chocolate.jpg" alt="Chocolate"><span>Chocolate - $66</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="chocolate_mexicano.jpg" alt="Chocolate mexicano"><span>Chocolate mexicano - $50</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="vaso_de_leche.jpg" alt="Vaso de leche"><span>Vaso de leche - $48</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="chocolate_blanco.jpg" alt="Chocolate blanco"><span>Chocolate blanco - $50</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="moka.jpg" alt="Moka"><span>Moka - $62</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="moka_blanco.jpg" alt="Moka blanco"><span>Moka blanco - $66</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="moka_mexicano.jpg" alt="Moka mexicano"><span>Moka mexicano - $66</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="moka_vianes.jpg" alt="Moka vianés"><span>Moka vianés - $66</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="capuccino_frappe.jpg" alt="Capuccino frappe"><span>Capuccino frappe - $73</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="moka_frappe.jpg" alt="Moka frappe"><span>Moka frappe - $76</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="oreo_frappe.jpg" alt="Oreo frappe"><span>Oreo frappe - $76</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="vainilla_latte.jpg" alt="Vainilla latte"><span>Vainilla latte - $76</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="cajeta_latte.jpg" alt="Cajeta latte"><span>Cajeta latte - $76</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="latte_frio.jpg" alt="Latte frio"><span>Latte frio - $73</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="chocolate_frappe.jpg" alt="Chocolate frappe"><span>Chocolate frappe - $73</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="chai_frappe.jpg" alt="Chai frappe"><span>Chai frappe - $76</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="smoothies.jpg" alt="Smoothies"><span>Smoothies - $76</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="tes_y_tisanas.jpg" alt="Tes y tisanas"><span>Tes y tisanas - $73</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="frappe_sabor.jpg" alt="Frappe sabor"><span>Frappe sabor - $76</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="tes_y_tisanas.jpg" alt="Tes y tisanas"><span>Tes y tisanas - $73</span><button class="add-to-cart">Agregar al carrito</button></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FoodTiesaDelivery</p>
+    </footer>
+
+</body>
+</html>

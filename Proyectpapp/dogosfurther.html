@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogos Furter</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: #000;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+        main {
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+        }
+        .menu-item img {
+            width: 100px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <a href="#">Cuenta</a>
+                <ul>
+                    <li><a href="pagina-cuenta.html">Mi Cuenta</a></li>
+                    <li><a href="historial-pedidos.html">Historial de Pedidos</a></li>
+                    <li><a href="wallet.html">Wallet</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                    <li><a href="promociones.html">Promociones</a></li>
+                    <li><a href="cerrar-sesion.html">Cerrar Sesión</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Dogos Furter</h1>
+        <h2>Menú</h2>
+        <ul>
+            <li class="menu-item">
+                <img src="eggy.jpg" alt="Eggy">
+                <span>Eggy - $60</span>
+                <button onclick="addToCart('Eggy', 60)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="breakfast_dog.jpg" alt="Breakfast Dog">
+                <span>Breakfast dog - $70</span>
+                <button onclick="addToCart('Breakfast Dog', 70)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="pancake_roll.jpg" alt="Pancake Roll">
+                <span>Pancake roll - $50</span>
+                <button onclick="addToCart('Pancake Roll', 50)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="monte_cristo.jpg" alt="Monte Cristo">
+                <span>Monte cristo - $75</span>
+                <button onclick="addToCart('Monte Cristo', 75)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="blt.jpg" alt="BLT">
+                <span>Blt - $45</span>
+                <button onclick="addToCart('BLT', 45)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="huevo_con_salchicha.jpg" alt="Huevo con Salchicha">
+                <span>Huevo con salchicha - $45</span>
+                <button onclick="addToCart('Huevo con salchicha', 45)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="pan_frances.jpg" alt="Pan Francés">
+                <span>Pan francés - $45</span>
+                <button onclick="addToCart('Pan francés', 45)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="hot_dog_mexa.jpg" alt="Hot Dog Mexa">
+                <span>Hot dog mexa - $80</span>
+                <button onclick="addToCart('Hot dog mexa', 80)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="hot_dog_klassiker.jpg" alt="Hot Dog Klassiker">
+                <span>Hot dog klassiker - $80</span>
+                <button onclick="addToCart('Hot dog klassiker', 80)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="hot_dog_3_quesos.jpg" alt="Hot Dog 3 Quesos">
+                <span>Hot dog 3 quesos - $80</span>
+                <button onclick="addToCart('Hot dog 3 quesos', 80)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="hot_dog_champagnat.jpg" alt="Hot Dog Champagnat">
+                <span>Hot dog champagnat - $80</span>
+                <button onclick="addToCart('Hot dog champagnat', 80)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="hot_dog_texano.jpg" alt="Hot Dog Texano">
+                <span>Hot dog texano - $80</span>
+                <button onclick="addToCart('Hot dog texano', 80)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="hot_dog_vegetariano.jpg" alt="Hot Dog Vegetariano">
+                <span>Hot dog vegetariano - $70</span>
+                <button onclick="addToCart('Hot dog vegetariano', 70)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="hot_dog_campirano.jpg" alt="Hot Dog Campirano">
+                <span>Hot dog campirano - $80</span>
+                <button onclick="addToCart('Hot dog campirano', 80)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="hot_dog_capri.jpg" alt="Hot Dog Capri">
+                <span>Hot dog capri - $80</span>
+                <button onclick="addToCart('Hot dog capri', 80)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="hot_dog_griego.jpg" alt="Hot Dog Griego">
+                <span>Hot dog griego - $80</span>
+                <button onclick="addToCart('Hot dog griego', 80)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="hot_dog_napolitano.jpg" alt="Hot Dog Napolitano">
+                <span>Hot dog napolitano - $80</span>
+                <button onclick="addToCart('Hot dog napolitano', 80)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="fries.jpg" alt="Fries">
+                <span>Fries - $45</span>
+                <button onclick="addToCart('Fries', 45)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="furter_fries.jpg" alt="Furter Fries">
+                <span>Furter fries - $55</span>
+                <button onclick="addToCart('Furter fries', 55)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="aguas_frescas.jpg" alt="Aguas Frescas">
+                <span>Aguas frescas - $20</span>
+                <button onclick="addToCart('Aguas frescas', 20)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="s_pellegrino.jpg" alt="S.Pellegrino">
+                <span>S.pellegrino - $30</span>
+                <button onclick="addToCart('S.pellegrino', 30)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="boing.jpg" alt="Boing">
+                <span>Boing - $20</span>
+                <button onclick="addToCart('Boing', 20)">Agregar al carrito</button>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FoodTiesaDelivery</p>
+    </footer>
+
+    <script>
+        function addToCart(itemName, itemPrice) {
+            console.log("Agregado al carrito:", itemName, "- Precio:", itemPrice);
+        }
+    </script>
+
+</body>
+</html>

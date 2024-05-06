@@ -1,0 +1,844 @@
+Nombre de la applicación: 
+Nombre del Proyecto: FoodTiesaDelivery
+
+Descripción:
+FoodTiesaDelivery 
+-login (crear cuenta o iniciar sesion)
+1.-navbar (opciones generales, inicio de sesión, crear cuenta, mas sobre nosotros)
+.-- paginas correspondientes a manera de modal de creación de cuenta e incio de sesión
+-pagina principal (restaurantes en primer plano con imagen y nombre, algunos platillos exhibidos en la parte superior)
+1.-navbar (opciones, ubicación, opciones de recibir en casa o recolectar, buscar)
+1.1- opciones incluye varias subpaginas (cuenta, historial de pedidos, registro de tarjetas llamado wallet, ayuda, promociones, cerrar sesión)
+2.- en caso de solicitar recolectar el pedido, se hace este frente al restaurante pero ya no se prosigue a nada
+2.1- en caso de solicitar que se entregue se prosigue a los datos del pedido como pago y lugar de entrega
+-pagina de pedido (desglose de pedido y costes, total, ingreso de lugar de entrega, seleccion de metodo de pago, botón de cancelar pedido y botón de proseguir con el mismo)
+1.- se puede ingresar el edificio de una lista desplegable del alfabeto, pero el numero de aula lo ingresa el usuario como una nota de pedido
+2.-hay dos metodos de pago disponibles, efectivo y tarjeta (si se selecciona tarjeta esta se debe dar de alta, redirigir a la pagina de wallet en caso de no haber tarjetas dadas de alta)
+
+listado de restaurantes dento del campus a los cuales se realizan los pedidos:
+*Oriental Fast Food
+-Arroz frito completa $30
+-Arroz frito media $26
+-Guisado completo $40
+-Pollo capeado $37
+-Pollo caepeado media $29
+-Rollo primavera $18
+-Rollo salchicha $18
+-Huevos con 1 ingrediente $33
+-Huevos con 1 ingrediente + frijoles $47
+-Omelet con 1 ingrediente y queso $38
+-Omelete con 1 ingrediente y queso + frijoles $52
+-Chilaquiles chicos $37
+-Chilaquiles grandes
+-Quesadilla frita (pierna, chicharron, champiñon, chorizo con papas o natural) $38
+-Quesadilla frita + frijoles $48
+-Molletes $28
+-Huevos + chilaquiles + frijoles $62
+-Huevos + chilaquiles + frijoles + jugo de naranja $77
+-Omelet + chilaqiles + frijoles $67
+-Omelet + chilaquiles + frijoles + jugo de naranja $82
+-Ingrediente extra $10
+-Jugo de naranja $28
+-Chocomilk $22
+-Chocomilk $35
+
+*Limón y Chía (Central)
+-Frappe taro $75
+-Frappe matcha $75
+-Frappe coco $75
+-Frappe oso Frappe $75
+-Té chai (Manzana, Vainilla, Vainilla light) $75
+-Tizanas (Manzana, Fresa-kiwi) $60
+-Café orgánico de olla con canela $35
+-Chocomilk $35
+-Té $30
+-Smothie antiestres $65
+-Smothie concentración $65
+-Smothie energía $65
+-Smothie deportista $65
+-Smothie antioxidante $65
+-Jugos (antigripal, verde) $36
+-Chilaquiles $50
+-Huevos al gusto $50
+-Waffle avena $60
+-Green waffle $60
+-Pan francés $60
+-Molletes $55
+-Barra de frutas $45
+-Wrap de huevo $75
+-Avocado toast $50
+-Sweet toast $50
+-Quesadillas (3 pzas) $45
+-Acai bowl $80
+-Ensalada grande $110
+-Ensalada media $90
+-Ensalada mini $55
+-Taco gobernador $70
+-Pasta salteada con vegetales $55
+-Camote a la francesa $45
+-Papas a la francesa $45
+-Chicken fingers (BBQ) $75
+-Wrap $75
+-Panini $75
+-Sandwich $65
+-Ciabatta $90
+-Hamburguesas $75
+-Poke bowl $90
+-Bowl oriental $87
+
+*La taquería
+-Taco chico $18 (asada, pastor o chorizo)
+-Taco grande $22 (asada, pastor o chorizo)
+-Taco recien hecha $24 (asada, pastor o chorizo)
+-Taco harina $24 (asada, pastor o chorizo)
+-Taco grande arrachera $29 
+-Taco recien hecha harina $30 
+-Taco harina recien hecha $30
+-Taco de guisado $19
+-Taco de barbacoa $20
+-Torta de barbacoa $75
+-Quesadilla (asada, pastor o chorizo) $45
+-Quesadilla arrachera $52
+-Quesadilla guisado $40
+-Quesadilla sencilla $25
+-Gringa (asada, pastor o chorizo) $52
+-Gringa arrachera $56
+-Gringa guisado $45
+-Takiqueso/costra (asada, pastor o chorizo) $58
+-Takiqueso/costra arrachera $65
+-Orden (asada, pastor o chorizo) $82
+- 1/2 Orden (asada, pastor o chorizo) $70
+-Orden arrachera $95
+- 1/2 Orden arrachera $75
+-Orden guisado $70
+- 1/2 Orden guisado $57
+-3 tacos de guisado $70
+-5 tacos chicos $100
+-torta $90
+-Gringa y 2 tacos $95
+-3 tacos de barbacoa $68
+-Orden de carne $95
+-Orden de chilaquiles $60
+-Comida del día $70
+-Paquete mega $90
+-Nachos $78
+
+*Itacate
+-Bowl de fruta $52
+-Omelette/huevos al gusto $65
+-Hot cakes $52
+-Chilaquiles $50
+-Chilaquiles con pollo $66
+-Mollete $27
+-Mollete con chorizo $43
+-Jugo $28
+-Chocomilk $28
+-Café de olla $20
+-Agua fresca $20
+-Refresco $24
+-Agua de coco $30
+-Fuze tea $30
+-poke bowl atún $95
+-poke bowl camarón $95
+-poke bowl pollo $95
+-poke bowl salmón $105
+-Poke bowl armado $105
+-Tostada atún fresco $40
+-Tostada camarón $37
+-Tostada pescado $32
+-Tostada aguachile $38
+-Taco de pescado $32
+-Taco de marlin $35
+-Taco de camarón $37
+-Taco de gobernador $45
+-Gringa $45
+-Burrito $75
+-Torta ahogada $70
+-Coctel $95
+
+*I’l Caffeto
+-Espresso $39
+-Espresso ristretto $39
+-Espresso doppio $39
+-Espresso macchiato $41
+-Espresso macchiato doble $45
+-Americano $48
+-Americano con leche $50
+-Long black $ 43
+-Cafe de olla $48
+-capuccino $60
+-Latte $65
+-Capuccino nutella $66
+-Latte vainilla $66
+-Latte cajeta $66
+-Latte caramelo $66
+-Chocolate $66
+-Chocolate mexicano $50
+-Vaso de leche $48
+-Chocolate blanco $50
+-Moka $62
+-Moka blanco $66
+-Moka mexicano $66
+-Moka vianés $66
+-Capuccino frappe $73
+-Moka frappe $76
+-Oreo frappe $76
+-Vainilla latte $76
+-Cajeta latte $76
+-Latte frio $73
+-Chocolate frappe $73
+-Chai frappe $76
+-Smoothies $76
+-Tes y tisanas $73
+-Frappe sabor $76
+-Tes y tisanas $73
+
+*Dogos Furter
+-Eggy $60
+-Breakfast dog $70
+-Pancake roll $50
+-Monte cristo $75
+-Blt $45
+-Huevo con salchicha $45
+-Pan frances $45
+-Hot dog mexa $80
+-Hot dog klassiker $80
+-Hot dog 3 quesos $80
+-Hot dog champagnat $80
+-Hot dog texano $80
+-Hot dog vegetariano $70
+-Hot dog campirano $80
+-Hot dog capri $80
+-Hot dog griego $80
+-Hot dog napolitano $80
+-Fries $45
+-Furter fries $55
+-Aguas frescas $20
+-S.pellegrino $30
+-Boing $20
+
+*Elotes Vanessa
+-Vaso de esquite $35
+-Mokle de esquite $45
+-Elote entero $30
+-Elote en canasta $55
+-Frutiloka vaso 12 onz $25
+-Frutiloka vaso 16 onz $30
+-Frutiloka molde $45
+-Frutiloka canasta $55
+-Verdura cocida vaso 12 onz $25
+-Verdura cocida vaso 16 onz $30
+-Molde verdura cocida $45
+-Tostielote $60
+-Tostiloco $60
+-Tostinachos $60
+-Vanipapas $45
+-Tamales $33
+-Tamaelotes $50
+
+*Paletas el Feo
+-Paletas de leche $30 
+-Paletas de agua $25 
+-Paletas con Stevia $30 
+-Paletas con chocolate $35 
+-Boli leche $30
+-Boli agua $25
+-príncipes $25 
+-Triki-trakes $25 
+-Lors $25 
+-Chocorrol $30 
+-Pingüinos $30 
+-Submarino $30 
+-Rol de canela $30 
+-Rol glaseado $30 
+-Gansito $20 
+-Nito $20 
+-Barritas fresa $20
+-Rollo $20
+-Muffins chocolate $30 
+-Strudel de manzana $30 
+-Brownies $30 
+-Galleta chispas chocolate $15 
+-Cuernito de chocolate $30 
+-Obleas de amaranto $40 
+-Amarantos $20 
+-Galletas veganas $30 
+-Galletas La integral $30
+-Poptarts $25
+-Papas caseras $25 
+-Papas Sabritas $22 
+-Papas Barcel $22 
+-Veggie chips $22 
+-Palomitas $20 
+-Frituras (churros) $20
+-Papas tamaño jumbo $60
+-Rollo de pizza $40
+-Mini pizza $35 
+-Carne seca $90 
+-Salchichas $25 
+-Maruchan $25 
+-Lonche de pierna $50 
+-Lonche de panela $40 
+-Lonche de jamón $35 
+-Lonche de salchicha con tocino $40
+-Barras de proteína $40 
+-Barras de granola $20 
+-Barras de avena $20 
+-Rice krispies $10 
+-Rol de tres leches $30 
+-Marinas galleta de cacahuate $20
+-Oreo $22 
+-Florentinas $22 
+-Emperador $22 
+-Chip’s ahoy $22
+-Chokis $22
+-Pastes $40
+-Gomitas y cacahuates $15 
+-Rocaleta $8 
+-Paletas varias $5 
+-GUMS $60 
+-Halls $15 
+-Hershey $25 
+-Kitkat $25 
+-Snickers $25 
+-Milkyway $25 
+-Kinder delice $25 
+-Reese’s $25 
+-Lindt $100 
+-M&M $100 
+-Ritter sport $70 
+-Toblerone $80
+-Milka XXL $180
+-Aguas frescas $30 
+-Chocomilk $35
+-Licuados $50 
+-Malteadas $40
+-Lata $22 
+-Taparrosca $24 
+-Jugos Jumex $25 
+-Yogur bebible $20 
+-Gatorade $30 
+-Vitamin water $30 
+-Electrolit $30
+-Jazte $25
+
+*Flor de Cordoba (Arrupe)
+-Americano $50
+-Americano con leche $48
+-Americano descafeinado $40
+-Expresso americano $43
+-Cafe de olla $46
+-Capuccino expresso $58
+-Capuccino Carlos V $68
+-Caramelo macchiato $69
+-Latte $57
+-Moca $64
+-Te herbal $42
+-Chai $79
+-Matcha en $77
+-Chocolate de la casa $55
+-Tisana $55
+-Taro $77
+-Expresso $32
+-Largo $36
+-Doble $38
+-Doble largo $42
+-Frappe Clasico $80
+-Frappe light $80
+-Frappe moca $83
+-Frappe especial $83
+-Caramelo macchiato $85
+-Americano frio $41
+-Expresso americano $41
+-Latte $70
+-Cold brew $42
+-Te herbal $43
+-Chai $77
+-Matcha $77
+-Frappe de chocolate $75
+-Smothie $72
+-Maltada $75
+-Taro $77
+-Tisana $63
+-Panini de jamon de pavo $75
+-Panini de selva negra en $82
+-Panini de pollo en $88
+-Panini de pavo en $65
+-Panini de selva negra $60
+-Sandwich de pollo en $60
+-pastel mini $75
+-Pastel mini stevia $77
+-gelatina $42
+
+*Limón y Chía (Arrupe)
+-Frappe taro $75
+-Frappe matcha $75
+-Frappe coco $75
+-Frappe oso Frappe $75
+-Té chai (Manzana, Vainilla, Vainilla light) $75
+-Tizanas (Manzana, Fresa-kiwi) $60
+-Café orgánico de olla con canela $35
+-Chocomilk $35
+-Té $30
+-Smothie antiestres $65
+-Smothie concentración $65
+-Smothie energía $65
+-Smothie deportista $65
+-Smothie antioxidante $65
+-Jugos (antigripal, verde) $36
+-Chilaquiles $50
+-Huevos al gusto $50
+-Waffle avena $60
+-Green waffle $60
+-Pan francés $60
+-Molletes $55
+-Barra de frutas $45
+-Wrap de huevo $75
+-Avocado toast $50
+-Sweet toast $50
+-Quesadillas (3 pzas) $45
+-Acai bowl $80
+-Ensalada grande $110
+-Ensalada media $90
+-Ensalada mini $55
+-Taco gobernador $70
+-Pasta salteada con vegetales $55
+-Camote a la francesa $45
+-Papas a la francesa $45
+-Chicken fingers (BBQ) $75
+-Wrap $75
+-Panini $75
+-Sandwich $65
+-Ciabatta $90
+-Hamburguesas $75
+-Poke bowl $90
+-Bowl oriental $87
+
+*Tacos Jorgillo
+-Taco de canasta $14 (chicharron, frijol, mole, picadillo, papa)
+-Lonches $43 (lomo, pierna, jamon, frijoles, panela)
+-Chilaquiles $45 (verdes, rojos)
+-Gorditas $30 (chicharron, lomo)
+-Comida del dia $70 (lonche de chicharron, bistec de res, pollo a la plancha, chuleta ahumada)
+-Huevos $53 (revueltos, a la mexicana, estrellados)
+-Taco dorado con carne $24 (papa, frijol)
+-Taco dorado sencillo $14 (papa, frijol)
+-Quesadilla sencilla $25
+-Quesadilla con carne $40
+-Tostada $25 (jamon, carnitas, cueritos, panela, pierna)
+-Torta ahogada $43
+-Paleta de agua $20
+-Paletas de crema $25
+-Molletes dulces o salados 1 pz $25
+-Molletes dulces o salados 2 pzs $43
+-Malteadas $45 (chocolate, fresa, ferrero, vainilla)
+-Chocomilk $25
+-Agua del dia $20
+-Jugos naturales $30
+-Fresas con crema $40
+
+*La Gran Diosa
+-Chilaquiles chile morita $60
+-Chilaquiles en salsa verde $60
+-Chilaquiles enamorados en $60
+-Waffles $55
+-Hot cakes $50
+-Pan frances $60
+-Cafe de olla $35
+-Aguas de sabor $24
+-Maltadas $65
+-Bebidas $20
+-Lechitas $15
+-Chocomilk $25
+-Jugo del valle $20
+-Hamburguesa sencilla $65
+-Hamburguesa clasica $75
+-Hamburguesa grandiosa $110
+-Orden de papas a la francesa o curry $25
+-Nuggets de pollo 6 pzs $55
+-Nuggets de pollo 10 pzs $75
+-Pasta alfredo $65
+-Pasta italiana $70
+-Pasta bolognesa $80
+-Pasta con champiñones $70
+-Pasta con jitomate deshidratado $80
+-Wings 8 pzas $90
+-Wings 12 pzas $120
+-wings 20 pzas $195
+-Aros de cebolla $55
+-chicken tenders $120
+
+*D´Espresso café (W)
+-Americano $45
+-Capuccino $53
+-Latte $53
+-Expresso $37
+-Chocolate $50
+-Chocolate blanco $55
+-Mocha $57
+-Tisana $55
+-Chai tea $61
+-Chai tea power $66
+-Matcha $61
+-Tisana helada $58
+-Ice latte special $63
+-Capuccino frappy $63
+-Smoothie $68
+-Chai frappy $68
+-Chai frappy power $73
+-Matcha frappy $70
+- Taro frappy $70
+-Brownie $25
+-Galleta casera $20
+-Muffin $32
+-Alfajor argetino $35
+-Brownie philadelphia $45
+-Bagel $65
+-Sandwich $45
+
+*Güich
+-Mañanero clasico $69
+-Queso y tocino $73
+-Super burrito $72
+-Chilaquiles $49
+-Mollete $34
+-apple toast $41
+-Nutella toast $41
+-Avocado toast$41
+-Vaso de fruta #30
+-Muesli $50
+-Bowen pastor $79
+-Summer chicken $79
+-Coliseo $79
+-bacon turkey $70
+-Croissanguich $68
+-Pizzanguich $70
+-Happy turkey $70
+-Avocado $70
+-Selva negra $79
+-Tofino $85
+-Cove $90
+-Vegetarian $70
+-Gran turkey $70
+-Home sweet home $70
+-Tres quesos $70
+-Tomato & Chicken $77
+-Ensalada cesar $75
+-Ensalada sayula $90
+-Ensalada super verde $90
+-Barra de ensalada $90
+-Poke bowl pollo o atun $89
+-Poke bowl garibaldi $89
+-Quesadilla $47
+-Quesadilla pollo $69
+-Pasta mixta $55
+-Vaso de fruta $30
+
+*El feo Fit
+-Paletas de leche $30 
+-Paletas de agua $25 
+-Paletas con Stevia $30 
+-Paletas con chocolate $35 
+-Boli leche $30
+-Boli agua $25
+-príncipes $25 
+-Triki-trakes $25 
+-Lors $25 
+-Chocorrol $30 
+-Pingüinos $30 
+-Submarino $30 
+-Rol de canela $30 
+-Rol glaseado $30 
+-Gansito $20 
+-Nito $20 
+-Barritas fresa $20
+-Rollo $20
+-Muffins chocolate $30 
+-Strudel de manzana $30 
+-Brownies $30 
+-Galleta chispas chocolate $15 
+-Cuernito de chocolate $30 
+-Obleas de amaranto $40 
+-Amarantos $20 
+-Galletas veganas $30 
+-Galletas La integral $30
+-Poptarts $25
+-Papas caseras $25 
+-Papas Sabritas $22 
+-Papas Barcel $22 
+-Veggie chips $22 
+-Palomitas $20 
+-Frituras (churros) $20
+-Papas tamaño jumbo $60
+-Rollo de pizza $40
+-Mini pizza $35 
+-Carne seca $90 
+-Salchichas $25 
+-Maruchan $25 
+-Lonche de pierna $50 
+-Lonche de panela $40 
+-Lonche de jamón $35 
+-Lonche de salchicha con tocino $40
+-Barras de proteína $40 
+-Barras de granola $20 
+-Barras de avena $20 
+-Rice krispies $10 
+-Rol de tres leches $30 
+-Marinas galleta de cacahuate $20
+-Oreo $22 
+-Florentinas $22 
+-Emperador $22 
+-Chip’s ahoy $22
+-Chokis $22
+-Pastes $40
+-Gomitas y cacahuates $15 
+-Rocaleta $8 
+-Paletas varias $5 
+-GUMS $60 
+-Halls $15 
+-Hershey $25 
+-Kitkat $25 
+-Snickers $25 
+-Milkyway $25 
+-Kinder delice $25 
+-Reese’s $25 
+-Lindt $100 
+-M&M $100 
+-Ritter sport $70 
+-Toblerone $80
+-Milka XXL $180
+-Aguas frescas $30 
+-Chocomilk $35
+-Licuados $50 
+-Malteadas $40
+-Lata $22 
+-Taparrosca $24 
+-Jugos Jumex $25 
+-Yogur bebible $20 
+-Gatorade $30 
+-Vitamin water $30 
+-Electrolit $30
+-Jazte $25
+
+*Yamato
+-Omellete $45
+-Burrito sencillo $70
+-Burrito yamato $85
+-Burrito vegetariano $65
+-Maki californa $105
+-Philadelphia maki $110
+-Empanizado maki $110
+-Isaac roll $180
+-Tempura spicy $180
+-Yamato $180
+-Rollo del mes $180
+-Sashimi $140
+-Akami $160
+-yakimeshi $110
+-Yakimeshi especial $110
+-Yakimeshi yamato $155
+-Kushiage de queso $90
+-Rollito primavera $30
+-Edame al vapor $65
+-Edame especial $85
+-Gelato de matcha $65
+-Arroz jazmin $40
+-Kombucha $60
+-Calpico $36
+-Refresco coca $30
+-Jaztea $25
+-Aguas de sabor $24
+
+*Capeltic
+-Expresso $38
+-Expresso doble $45
+-Americano capeltic $49
+-Capuccino $58
+-Capuccino italiano $57
+-Latte chabtic $66
+-Latte $65
+-Moka $68
+-Moka blanco $71
+-Chai sucio $79
+-Cappuccino frappe $64
+-Chocolate con menta frappe $67
+-Frappe chabtic $65
+-Chai frappe $71
+-Moka frappe $67
+-Moka blanco frappe $71
+-Cookies & cream frappe $68
+-Matcha latte frappe $78
+-Smoothie de yougurt molecular $80
+-Cookies & cream $65
+-Chai latte $69
+-Matcha latte $66
+-Chocolate caliente $58
+-Chocolate blanco $63
+-Te $47
+-Tisana $53
+-Soda chabtic $64
+-Soda italiana $57
+-Chamoyada $54
+-Nuestra mezcla $172
+-Organico gourmet $196
+-Descafeinado $219
+-Granos de cafe cubiertos de chocolate $64
+
+*D´Espresso café (Q5)
+-Americano $45
+-Capuccino $53
+-Latte $53
+-Expresso $37
+-Chocolate $50
+-Chocolate blanco $55
+-Mocha $57
+-Tisana $55
+-Chai tea $61
+-Chai tea power $66
+-Matcha $61
+-Tisana helada $58
+-Ice latte special $63
+-Capuccino frappy $63
+-Smoothie $68
+-Chai frappy $68
+-Chai frappy power $73
+-Matcha frappy $70
+-Taro frappy $70
+-Brownie $25
+-Galleta casera $20
+-Muffin $32
+-Alfajor argetino $35
+-Brownie philadelphia $45
+-Bagel $65
+-Sandwich $45
+
+*Rima café
+-Espresso $34
+-Espresso doble $40
+-Espresso cortado $45
+-Americano espresso $5
+-Capuccino $69
+-Latte $69
+-Mocha $79
+-latte caramelo $79
+-Chai $71
+-Matcha $70
+-Taro $82
+-Te $51
+-Tisana $68
+-Chocolate $68
+-Bebida de temporada $85
+-Prensa francesa $65
+-Chemex $65
+-V60 $62
+-Frappe cafe $74
+-Frappe caramelo $84
+-Frappe mocha $84
+-Frappe chai $89
+-Frappe taro $85
+-Frappe sabores $84
+-Frappe cookies $67
+-Cold brew $72
+-Nitro cold brew $69
+-Te rima $73
+-Tisana rima $24
+-Coca cola 500 ml $20
+-Agua natural $20
+-Agua mineral $40
+-San pellegrino $40
+-Red cola $20
+
+*El terrible Juan
+-Espresso doble $35
+-Macchiato $37
+-Espresso americano $38
+-Capuccino $42
+-Moka $45
+-Late caramel $60
+-Moka blanco $60
+-Chai $65
+-Chocolate $45
+-Matcha $65
+-Taro $55
+-Te $35
+-V60 $60
+-Chemex $60
+-kalita $60
+-Prensa francesa $60
+-Aeropress $60
+-Iced coffee $45
+-Iced latte $52
+-Iced latte caramel $62
+-Iced taro $65
+-Chocolate frio $50
+-Chai frio $70
+-Matcha frio $70
+-Agua tonica $25
+-Agua mineral $25
+-Brewtal coldbrew $65
+-Felix schorles $40
+-Trensa de philadelphia $40
+-Rol de nutella $50
+-Brownie $40
+-Polvoron $10
+-Cheescake de nutella $65
+-Pay de datil $65
+-Pay de limon $65
+-Pay de manzana $65
+-Bisquet $65
+-Fruitbowl $72
+-Emparedado de serrano $75
+-Emperado de roast beef $75
+-Emparedado canadiense $75
+-Emparedado vegetariano $75
+-Emparedado aguacate y queso de cabra $75
+-Molletes veganos $80
+-Molletes 4 quesos $90
+
+*Flor de Cordoba (Biblioteca)
+-Americano $50
+-Americano con leche $48
+-Americano descafeinado $40
+-Expresso americano $43
+-Cafe de olla $46
+-Capuccino expresso $58
+-Capuccino Carlos V $68
+-Caramelo macchiato $69
+-Latte $57
+-Moca $64
+-Te herbal $42
+-Chai $79
+-Matcha en $77
+-Chocolate de la casa $55
+-Tisana $55
+-Taro $77
+-Expresso $32
+-Largo $36
+-Doble $38
+-Doble largo $42
+-Frappe Clasico $80
+-Frappe light $80
+-Frappe moca $83
+-Frappe especial $83
+-Caramelo macchiato $85
+-Americano frio $41
+-Expresso americano $41
+-Latte $70
+-Cold brew $42
+-Te herbal $43
+-Chai $77
+-Matcha $77
+-Frappe de chocolate $75
+-Smothie $72
+-Maltada $75
+-Taro $77
+-Tisana $63
+-Panini de jamon de pavo $75
+-Panini de selva negra en $82
+-Panini de pollo en $88
+-Panini de pavo en $65
+-Panini de selva negra $60
+-Sandwich de pollo en $60
+-pastel mini $75
+-Pastel mini stevia $77
+-gelatina $42

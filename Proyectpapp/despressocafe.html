@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D'Espresso Café (W)</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: #000;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+        main {
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+        }
+        .menu-item img {
+            width: 100px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <a href="#">Cuenta</a>
+                <ul>
+                    <li><a href="pagina-cuenta.html">Mi Cuenta</a></li>
+                    <li><a href="historial-pedidos.html">Historial de Pedidos</a></li>
+                    <li><a href="wallet.html">Wallet</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                    <li><a href="promociones.html">Promociones</a></li>
+                    <li><a href="cerrar-sesion.html">Cerrar Sesión</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>D'Espresso Café (W)</h1>
+        <h2>Menú</h2>
+        <ul>
+            <li class="menu-item">
+                <img src="americano.jpg" alt="Americano">
+                <span>Americano - $45</span>
+                <button onclick="addToCart('Americano', 45)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="capuccino.jpg" alt="Capuccino">
+                <span>Capuccino - $53</span>
+                <button onclick="addToCart('Capuccino', 53)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="latte.jpg" alt="Latte">
+                <span>Latte - $53</span>
+                <button onclick="addToCart('Latte', 53)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="expresso.jpg" alt="Expresso">
+                <span>Expresso - $37</span>
+                <button onclick="addToCart('Expresso', 37)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="chocolate.jpg" alt="Chocolate">
+                <span>Chocolate - $50</span>
+                <button onclick="addToCart('Chocolate', 50)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="chocolate_blanco.jpg" alt="Chocolate Blanco">
+                <span>Chocolate blanco - $55</span>
+                <button onclick="addToCart('Chocolate blanco', 55)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="mocha.jpg" alt="Mocha">
+                <span>Mocha - $57</span>
+                <button onclick="addToCart('Mocha', 57)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="tisana.jpg" alt="Tisana">
+                <span>Tisana - $55</span>
+                <button onclick="addToCart('Tisana', 55)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="chai_tea.jpg" alt="Chai Tea">
+                <span>Chai tea - $61</span>
+                <button onclick="addToCart('Chai tea', 61)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="chai_tea_power.jpg" alt="Chai Tea Power">
+                <span>Chai tea power - $66</span>
+                <button onclick="addToCart('Chai tea power', 66)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="matcha.jpg" alt="Matcha">
+                <span>Matcha - $61</span>
+                <button onclick="addToCart('Matcha', 61)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="tisana_helada.jpg" alt="Tisana Helada">
+                <span>Tisana helada - $58</span>
+                <button onclick="addToCart('Tisana helada', 58)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="ice_latte_special.jpg" alt="Ice Latte Special">
+                <span>Ice latte special - $63</span>
+                <button onclick="addToCart('Ice latte special', 63)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="capuccino_frappy.jpg" alt="Capuccino Frappy">
+                <span>Capuccino frappy - $63</span>
+                <button onclick="addToCart('Capuccino frappy', 63)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="smoothie.jpg" alt="Smoothie">
+                <span>Smoothie - $68</span>
+                <button onclick="addToCart('Smoothie', 68)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="chai_frappy.jpg" alt="Chai Frappy">
+                <span>Chai frappy - $68</span>
+                <button onclick="addToCart('Chai frappy', 68)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="chai_frappy_power.jpg" alt="Chai Frappy Power">
+                <span>Chai frappy power - $73</span>
+                <button onclick="addToCart('Chai frappy power', 73)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="matcha_frappy.jpg" alt="Matcha Frappy">
+                <span>Matcha frappy - $70</span>
+                <button onclick="addToCart('Matcha frappy', 70)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="taro_frappy.jpg" alt="Taro Frappy">
+                <span>Taro frappy - $70</span>
+                <button onclick="addToCart('Taro frappy', 70)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="brownie.jpg" alt="Brownie">
+                <span>Brownie - $25</span>
+                <button onclick="addToCart('Brownie', 25)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="galleta_casera.jpg" alt="Galleta Casera">
+                <span>Galleta casera - $20</span>
+                <button onclick="addToCart('Galleta casera', 20)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="muffin.jpg" alt="Muffin">
+                <span>Muffin - $32</span>
+                <button onclick="addToCart('Muffin', 32)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="alfajor_argentino.jpg" alt="Alfajor Argentino">
+                <span>Alfajor argetino - $35</span>
+                <button onclick="addToCart('Alfajor argetino', 35)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="brownie_philadelphia.jpg" alt="Brownie Philadelphia">
+                <span>Brownie philadelphia - $45</span>
+                <button onclick="addToCart('Brownie philadelphia', 45)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="bagel.jpg" alt="Bagel">
+                <span>Bagel - $65</span>
+                <button onclick="addToCart('Bagel', 65)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="sandwich.jpg" alt="Sandwich">
+                <span>Sandwich - $45</span>
+                <button onclick="addToCart('Sandwich', 45)">Agregar al carrito</button>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FoodTiesaDelivery</p>
+    </footer>
+
+    <script>
+        function addToCart(itemName, itemPrice) {
+            console.log("Agregado al carrito:", itemName, "- Precio:", itemPrice);
+        }
+    </script>
+
+</body>
+</html>

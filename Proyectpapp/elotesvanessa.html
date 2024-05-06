@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elotes Vanessa</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: #000;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+        main {
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <a href="#">Cuenta</a>
+                <ul>
+                    <li><a href="pagina-cuenta.html">Mi Cuenta</a></li>
+                    <li><a href="historial-pedidos.html">Historial de Pedidos</a></li>
+                    <li><a href="wallet.html">Wallet</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                    <li><a href="promociones.html">Promociones</a></li>
+                    <li><a href="cerrar-sesion.html">Cerrar Sesión</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Elotes Vanessa</h1>
+        <h2>Menú</h2>
+        <ul>
+            <li><img src="vaso_de_esquite.jpg" alt="Vaso de esquite"><span>Vaso de esquite - $35</span><button onclick="addToCart('Vaso de esquite', 35)">Agregar al carrito</button></li>
+            <li><img src="mokle_de_esquite.jpg" alt="Mokle de esquite"><span>Mokle de esquite - $45</span><button onclick="addToCart('Mokle de esquite', 45)">Agregar al carrito</button></li>
+            <li><img src="elote_entero.jpg" alt="Elote entero"><span>Elote entero - $30</span><button onclick="addToCart('Elote entero', 30)">Agregar al carrito</button></li>
+            <li><img src="elote_en_canasta.jpg" alt="Elote en canasta"><span>Elote en canasta - $55</span><button onclick="addToCart('Elote en canasta', 55)">Agregar al carrito</button></li>
+            <li><img src="frutiloka_vaso_12_onz.jpg" alt="Frutiloka vaso 12 onz"><span>Frutiloka vaso 12 onz - $25</span><button onclick="addToCart('Frutiloka vaso 12 onz', 25)">Agregar al carrito</button></li>
+            <li><img src="frutiloka_vaso_16_onz.jpg" alt="Frutiloka vaso 16 onz"><span>Frutiloka vaso 16 onz - $30</span><button onclick="addToCart('Frutiloka vaso 16 onz', 30)">Agregar al carrito</button></li>
+            <li><img src="frutiloka_molde.jpg" alt="Frutiloka molde"><span>Frutiloka molde - $45</span><button onclick="addToCart('Frutiloka molde', 45)">Agregar al carrito</button></li>
+            <li><img src="frutiloka_canasta.jpg" alt="Frutiloka canasta"><span>Frutiloka canasta - $55</span><button onclick="addToCart('Frutiloka canasta', 55)">Agregar al carrito</button></li>
+            <li><img src="verdura_cocida_vaso_12_onz.jpg" alt="Verdura cocida vaso 12 onz"><span>Verdura cocida vaso 12 onz - $25</span><button onclick="addToCart('Verdura cocida vaso 12 onz', 25)">Agregar al carrito</button></li>
+            <li><img src="verdura_cocida_vaso_16_onz.jpg" alt="Verdura cocida vaso 16 onz"><span>Verdura cocida vaso 16 onz - $30</span><button onclick="addToCart('Verdura cocida vaso 16 onz', 30)">Agregar al carrito</button></li>
+            <li><img src="molde_verdura_cocida.jpg" alt="Molde verdura cocida"><span>Molde verdura cocida - $45</span><button onclick="addToCart('Molde verdura cocida', 45)">Agregar al carrito</button></li>
+            <li><img src="tostielote.jpg" alt="Tostielote"><span>Tostielote - $60</span><button onclick="addToCart('Tostielote', 60)">Agregar al carrito</button></li>
+            <li><img src="tostiloco.jpg" alt="Tostiloco"><span>Tostiloco - $60</span><button onclick="addToCart('Tostiloco', 60)">Agregar al carrito</button></li>
+            <li><img src="tostinachos.jpg" alt="Tostinachos"><span>Tostinachos - $60</span><button onclick="addToCart('Tostinachos', 60)">Agregar al carrito</button></li>
+            <li><img src="vanipapas.jpg" alt="Vanipapas"><span>Vanipapas - $45</span><button onclick="addToCart('Vanipapas', 45)">Agregar al carrito</button></li>
+            <li><img src="tamales.jpg" alt="Tamales"><span>Tamales - $33</span><button onclick="addToCart('Tamales', 33)">Agregar al carrito</button></li>
+            <li><img src="tamaelotes.jpg" alt="Tamaelotes"><span>Tamaelotes - $50</span><button onclick="addToCart('Tamaelotes', 50)">Agregar al carrito</button></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FoodTiesaDelivery</p>
+    </footer>
+
+    <script>
+        function addToCart(itemName, itemPrice) {
+            console.log("Agregado al carrito:", itemName, "- Precio:", itemPrice);
+        }
+    </script>
+
+</body>
+</html>

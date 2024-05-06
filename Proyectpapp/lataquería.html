@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de La Taquería</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: #000;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+        main {
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        li img {
+            width: 50px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .add-to-cart {
+            margin-left: auto;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <a href="#">Cuenta</a>
+                <ul>
+                    <li><a href="pagina-cuenta.html">Mi Cuenta</a></li>
+                    <li><a href="historial-pedidos.html">Historial de Pedidos</a></li>
+                    <li><a href="wallet.html">Wallet</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                    <li><a href="promociones.html">Promociones</a></li>
+                    <li><a href="cerrar-sesion.html">Cerrar Sesión</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Menú de La Taquería</h1>
+        <ul>
+            <li><img src="taco_asada.jpg" alt="Taco asada"><span>Taco chico $18 (asada, pastor o chorizo)</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="taco_pastor.jpg" alt="Taco pastor"><span>Taco grande $22 (asada, pastor o chorizo)</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="taco_chorizo.jpg" alt="Taco chorizo"><span>Taco recién hecha $24 (asada, pastor o chorizo)</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="taco_harina.jpg" alt="Taco harina"><span>Taco harina $24 (asada, pastor o chorizo)</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="taco_arrachera.jpg" alt="Taco arrachera"><span>Taco grande arrachera $29</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="taco_recien_hecha_harina.jpg" alt="Taco recién hecha harina"><span>Taco recién hecha harina $30</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="taco_harina_recien_hecha.jpg" alt="Taco harina recién hecha"><span>Taco harina recién hecha $30</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="taco_guisado.jpg" alt="Taco guisado"><span>Taco de guisado $19</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="taco_barbacoa.jpg" alt="Taco barbacoa"><span>Taco de barbacoa $20</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="torta_barbacoa.jpg" alt="Torta barbacoa"><span>Torta de barbacoa $75</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="quesadilla_asada.jpg" alt="Quesadilla asada"><span>Quesadilla (asada, pastor o chorizo) $45</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="quesadilla_arrachera.jpg" alt="Quesadilla arrachera"><span>Quesadilla arrachera $52</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="quesadilla_guisado.jpg" alt="Quesadilla guisado"><span>Quesadilla guisado $40</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="quesadilla_sencilla.jpg" alt="Quesadilla sencilla"><span>Quesadilla sencilla $25</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="gringa_asada.jpg" alt="Gringa asada"><span>Gringa (asada, pastor o chorizo) $52</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="gringa_arrachera.jpg" alt="Gringa arrachera"><span>Gringa arrachera $56</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="gringa_guisado.jpg" alt="Gringa guisado"><span>Gringa guisado $45</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="takiqueso_asada.jpg" alt="Takiqueso asada"><span>Takiqueso/costra (asada, pastor o chorizo) $58</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="takiqueso_arrachera.jpg" alt="Takiqueso arrachera"><span>Takiqueso/costra arrachera $65</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="orden_asada.jpg" alt="Orden asada"><span>Orden (asada, pastor o chorizo) $82</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="media_orden_asada.jpg" alt="1/2 Orden asada"><span>1/2 Orden (asada, pastor o chorizo) $70</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="orden_arrachera.jpg" alt="Orden arrachera"><span>Orden arrachera $95</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="media_orden_arrachera.jpg" alt="1/2 Orden arrachera"><span>1/2 Orden arrachera $75</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="orden_guisado.jpg" alt="Orden guisado"><span>Orden guisado $70</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="media_orden_guisado.jpg" alt="1/2 Orden guisado"><span>1/2 Orden guisado $57</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="tacos_guisado.jpg" alt="Tacos guisado"><span>3 tacos de guisado $70</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="tacos_chicos.jpg" alt="Tacos chicos"><span>5 tacos chicos $100</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="torta.jpg" alt="Torta"><span>Torta $90</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="gringa_taco.jpg" alt="Gringa taco"><span>Gringa y 2 tacos $95</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="tacos_barbacoa.jpg" alt="Tacos barbacoa"><span>3 tacos de barbacoa $68</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="orden_carne.jpg" alt="Orden carne"><span>Orden de carne $95</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="orden_chilaquiles.jpg" alt="Orden chilaquiles"><span>Orden de chilaquiles $60</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="comida_dia.jpg" alt="Comida día"><span>Comida del día $70</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="paquete_mega.jpg" alt="Paquete mega"><span>Paquete mega $90</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="nachos.jpg" alt="Nachos"><span>Nachos $78</span><button class="add-to-cart">Agregar al carrito</button></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FoodTiesaDelivery</p>
+    </footer>
+</body>
+</html>

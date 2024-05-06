@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paletas el Feo</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: #000;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+        main {
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        li img {
+            margin-right: 10px;
+            max-width: 100px;
+            max-height: 100px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <a href="#">Cuenta</a>
+                <ul>
+                    <li><a href="pagina-cuenta.html">Mi Cuenta</a></li>
+                    <li><a href="historial-pedidos.html">Historial de Pedidos</a></li>
+                    <li><a href="wallet.html">Wallet</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                    <li><a href="promociones.html">Promociones</a></li>
+                    <li><a href="cerrar-sesion.html">Cerrar Sesión</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Paletas el Feo</h1>
+        <h2>Menú</h2>
+        <ul>
+            <li><img src="paleta_de_leche.jpg" alt="Paleta de leche"><span>Paletas de leche - $30</span><button onclick="addToCart('Paletas de leche', 30)">Agregar al carrito</button></li>
+            <li><img src="paleta_de_agua.jpg" alt="Paleta de agua"><span>Paletas de agua - $25</span><button onclick="addToCart('Paletas de agua', 25)">Agregar al carrito</button></li>
+            <li><img src="paletas_con_stevia.jpg" alt="Paletas con Stevia"><span>Paletas con Stevia - $30</span><button onclick="addToCart('Paletas con Stevia', 30)">Agregar al carrito</button></li>
+            <li><img src="paletas_con_chocolate.jpg" alt="Paletas con chocolate"><span>Paletas con chocolate - $35</span><button onclick="addToCart('Paletas con chocolate', 35)">Agregar al carrito</button></li>
+            <li><img src="boli_leche.jpg" alt="Boli leche"><span>Boli leche - $30</span><button onclick="addToCart('Boli leche', 30)">Agregar al carrito</button></li>
+            <li><img src="boli_agua.jpg" alt="Boli agua"><span>Boli agua - $25</span><button onclick="addToCart('Boli agua', 25)">Agregar al carrito</button></li>
+            <li><img src="principes.jpg" alt="Príncipes"><span>Príncipes - $25</span><button onclick="addToCart('Príncipes', 25)">Agregar al carrito</button></li>
+            <li><img src="triki_trakes.jpg" alt="Triki-trakes"><span>Triki-trakes - $25</span><button onclick="addToCart('Triki-trakes', 25)">Agregar al carrito</button></li>
+            <li><img src="lors.jpg" alt="Lors"><span>Lors - $25</span><button onclick="addToCart('Lors', 25)">Agregar al carrito</button></li>
+            <li><img src="chocorrol.jpg" alt="Chocorrol"><span>Chocorrol - $30</span><button onclick="addToCart('Chocorrol', 30)">Agregar al carrito</button></li>
+            <li><img src="pinguinos.jpg" alt="Pingüinos"><span>Pingüinos - $30</span><button onclick="addToCart('Pingüinos', 30)">Agregar al carrito</button></li>
+            <li><img src="submarino.jpg" alt="Submarino"><span>Submarino - $30</span><button onclick="addToCart('Submarino', 30)">Agregar al carrito</button></li>
+            <li><img src="rol_de_canela.jpg" alt="Rol de canela"><span>Rol de canela - $30</span><button onclick="addToCart('Rol de canela', 30)">Agregar al carrito</button></li>
+            <li><img src="rol_glaseado.jpg" alt="Rol glaseado"><span>Rol glaseado - $30</span><button onclick="addToCart('Rol glaseado', 30)">Agregar al carrito</button></li>
+            <li><img src="gansito.jpg" alt="Gansito"><span>Gansito - $20</span><button onclick="addToCart('Gansito', 20)">Agregar al carrito</button></li>
+            <li><img src="nito.jpg" alt="Nito"><span>Nito - $20</span><button onclick="addToCart('Nito', 20)">Agregar al carrito</button></li>
+            <li><img src="barritas_fresa.jpg" alt="Barritas fresa"><span>Barritas fresa - $20</span><button onclick="addToCart('Barritas fresa', 20)">Agregar al carrito</button></li>
+            <li><img src="rollo.jpg" alt="Rollo"><span>Rollo - $20</span><button onclick="addToCart('Rollo', 20)">Agregar al carrito</button></li>
+            <li><img src="muffins_chocolate.jpg" alt="Muffins chocolate"><span>Muffins chocolate - $30</span><button onclick="addToCart('Muffins chocolate', 30)">Agregar al carrito</button></li>
+            <li><img src="strudel_de_manzana.jpg" alt="Strudel de manzana"><span>Strudel de manzana - $30</span><button onclick="addToCart('Strudel de manzana', 30)">Agregar al carrito</button></li>
+            <li><img src="brownies.jpg" alt="Brownies"><span>Brownies - $30</span><button onclick="addToCart('Brownies', 30)">Agregar al carrito</button></li>
+            <li><img src="galleta_chispas_chocolate.jpg" alt="Galleta chispas chocolate"><span>Galleta chispas chocolate - $15</span><button onclick="addToCart('Galleta chispas chocolate', 15)">Agregar al carrito</button></li>
+            <li><img src="cuernito_de_chocolate.jpg" alt="Cuernito de chocolate"><span>Cuernito de chocolate - $30</span><button onclick="addToCart('Cuernito de chocolate', 30)">Agregar al carrito</button></li>
+            <li><img src="obleas_de_amaranto.jpg" alt="Obleas de amaranto"><span>Obleas de amaranto - $40</span><button onclick="addToCart('Obleas de amaranto', 40)">Agregar al carrito</button></li>
+            <li><img src="amarantos.jpg" alt="Amarantos"><span>Amarantos - $20</span><button onclick="addToCart('Amarantos', 20)">Agregar al carrito</button></li>
+            <li><img src="galletas_veganas.jpg" alt="Galletas veganas"><span>Galletas veganas - $30</span><button onclick="addToCart('Galletas veganas', 30)">Agregar al carrito</button></li>
+            <li><img src="galletas_la_integral.jpg" alt="Galletas La integral"><span>Galletas La integral - $30</span><button onclick="addToCart('Galletas La integral', 30)">Agregar al carrito</button></li>
+            <li><img src="poptarts.jpg" alt="Poptarts"><span>Poptarts - $25</span><button onclick="addToCart('Poptarts', 25)">Agregar al carrito</button></li>
+            <li><img src="papas_caseras.jpg" alt="Papas caseras"><span>Papas caseras - $25</span><button onclick="addToCart('Papas caseras', 25)">Agregar al carrito</button></li>
+            <li><img src="papas_sabritas.jpg" alt="Papas Sabritas"><span>Papas Sabritas - $22</span><button onclick="addToCart('Papas Sabritas', 22)">Agregar al carrito</button></li>
+            <li><img src="papas_barcel.jpg" alt="Papas Barcel"><span>Papas Barcel - $22</span><button onclick="addToCart('Papas Barcel', 22)">Agregar al carrito</button></li>
+            <li><img src="veggie_chips.jpg" alt="Veggie chips"><span>Veggie chips - $22</span><button onclick="addToCart('Veggie chips', 22)">Agregar al carrito</button></li>
+            <li><img src="palomitas.jpg" alt="Palomitas"><span>Palomitas - $20</span><button onclick="addToCart('Palomitas', 20)">Agregar al carrito</button></li>
+            <li><img src="frituras.jpg" alt="Frituras (churros)"><span>Frituras (churros) - $20</span><button onclick="addToCart('Frituras (churros)', 20)">Agregar al carrito</button></li>
+            <li><img src="papas_tamaño_jumbo.jpg" alt="Papas tamaño jumbo"><span>Papas tamaño jumbo - $60</span><button onclick="addToCart('Papas tamaño jumbo', 60)">Agregar al carrito</button></li>
+            <li><img src="rollo_de_pizza.jpg" alt="Rollo de pizza"><span>Rollo de pizza - $40</span><button onclick="addToCart('Rollo de pizza', 40)">Agregar al carrito</button></li>
+            <li><img src="mini_pizza.jpg" alt="Mini pizza"><span>Mini pizza - $35</span><button onclick="addToCart('Mini pizza', 35)">Agregar al carrito</button></li>
+            <li><img src="carne_seca.jpg" alt="Carne seca"><span>Carne seca - $90</span><button onclick="addToCart('Carne seca', 90)">Agregar al carrito</button></li>
+            <li><img src="salchichas.jpg" alt="Salchichas"><span>Salchichas - $25</span><button onclick="addToCart('Salchichas', 25)">Agregar al carrito</button></li>
+            <li><img src="maruchan.jpg" alt="Maruchan"><span>Maruchan - $25</span><button onclick="addToCart('Maruchan', 25)">Agregar al carrito</button></li>
+            <li><img src="lonche_de_pierna.jpg" alt="Lonche de pierna"><span>Lonche de pierna - $50</span><button onclick="addToCart('Lonche de pierna', 50)">Agregar al carrito</button></li>
+            <li><img src="lonche_de_panela.jpg" alt="Lonche de panela"><span>Lonche de panela - $40</span><button onclick="addToCart('Lonche de panela', 40)">Agregar al carrito</button></li>
+            <li><img src="lonche_de_jamón.jpg" alt="Lonche de jamón"><span>Lonche de jamón - $35</span><button onclick="addToCart('Lonche de jamón', 35)">Agregar al carrito</button></li>
+            <li><img src="lonche_de_salchicha_con_tocino.jpg" alt="Lonche de salchicha con tocino"><span>Lonche de salchicha con tocino - $40</span><button onclick="addToCart('Lonche de salchicha con tocino', 40)">Agregar al carrito</button></li>
+            <li><img src="barras_de_proteina.jpg" alt="Barras de proteína"><span>Barras de proteína - $40</span><button onclick="addToCart('Barras de proteína', 40)">Agregar al carrito</button></li>
+            <li><img src="barras_de_granola.jpg" alt="Barras de granola"><span>Barras de granola - $20</span><button onclick="addToCart('Barras de granola', 20)">Agregar al carrito</button></li>
+            <li><img src="barras_de_avena.jpg" alt="Barras de avena"><span>Barras de avena - $20</span><button onclick="addToCart('Barras de avena', 20)">Agregar al carrito</button></li>
+            <li><img src="rice_krispies.jpg" alt="Rice krispies"><span>Rice krispies - $10</span><button onclick="addToCart('Rice krispies', 10)">Agregar al carrito</button></li>
+            <li><img src="rol_de_tres_leches.jpg" alt="Rol de tres leches"><span>Rol de tres leches - $30</span><button onclick="addToCart('Rol de tres leches', 30)">Agregar al carrito</button></li>
+            <li><img src="marinas_galleta_de_cacahuate.jpg" alt="Marinas galleta de cacahuate"><span>Marinas galleta de cacahuate - $20</span><button onclick="addToCart('Marinas galleta de cacahuate', 20)">Agregar al carrito</button></li>
+            <li><img src="oreo.jpg" alt="Oreo"><span>Oreo - $22</span><button onclick="addToCart('Oreo', 22)">Agregar al carrito</button></li>
+            <li><img src="florentinas.jpg" alt="Florentinas"><span>Florentinas - $22</span><button onclick="addToCart('Florentinas', 22)">Agregar al carrito</button></li>
+            <li><img src="emperador.jpg" alt="Emperador"><span>Emperador - $22</span><button onclick="addToCart('Emperador', 22)">Agregar al carrito</button></li>
+            <li><img src="chips_ahoy.jpg" alt="Chip’s ahoy"><span>Chip’s ahoy - $22</span><button onclick="addToCart('Chip’s ahoy', 22)">Agregar al carrito</button></li>
+            <li><img src="chokis.jpg" alt="Chokis"><span>Chokis - $22</span><button onclick="addToCart('Chokis', 22)">Agregar al carrito</button></li>
+            <li><img src="pastes.jpg" alt="Pastes"><span>Pastes - $40</span><button onclick="addToCart('Pastes', 40)">Agregar al carrito</button></li>
+            <li><img src="gomitas_y_cacahuates.jpg" alt="Gomitas y cacahuates"><span>Gomitas y cacahuates - $15</span><button onclick="addToCart('Gomitas y cacahuates', 15)">Agregar al carrito</button></li>
+            <li><img src="rocaleta.jpg" alt="Rocaleta"><span>Rocaleta - $8</span><button onclick="addToCart('Rocaleta', 8)">Agregar al carrito</button></li>
+            <li><img src="paletas_varias.jpg" alt="Paletas varias"><span>Paletas varias - $5</span><button onclick="addToCart('Paletas varias', 5)">Agregar al carrito</button></li>
+            <li><img src="gums.jpg" alt="GUMS"><span>GUMS - $60</span><button onclick="addToCart('GUMS', 60)">Agregar al carrito</button></li>
+            <li><img src="halls.jpg" alt="Halls"><span>Halls - $15</span><button onclick="addToCart('Halls', 15)">Agregar al carrito</button></li>
+            <li><img src="hershey.jpg" alt="Hershey"><span>Hershey - $25</span><button onclick="addToCart('Hershey', 25)">Agregar al carrito</button></li>
+            <li><img src="kitkat.jpg" alt="Kitkat"><span>Kitkat - $25</span><button onclick="addToCart('Kitkat', 25)">Agregar al carrito</button></li>
+            <li><img src="snickers.jpg" alt="Snickers"><span>Snickers - $25</span><button onclick="addToCart('Snickers', 25)">Agregar al carrito</button></li>
+            <li><img src="milkyway.jpg" alt="Milkyway"><span>Milkyway - $25</span><button onclick="addToCart('Milkyway', 25)">Agregar al carrito</button></li>
+            <li><img src="kinder_delice.jpg" alt="Kinder delice"><span>Kinder delice - $25</span><button onclick="addToCart('Kinder delice', 25)">Agregar al carrito</button></li>
+            <li><img src="reeses.jpg" alt="Reese’s"><span>Reese’s - $25</span><button onclick="addToCart('Reese’s', 25)">Agregar al carrito</button></li>
+            <li><img src="lindt.jpg" alt="Lindt"><span>Lindt - $100</span><button onclick="addToCart('Lindt', 100)">Agregar al carrito</button></li>
+            <li><img src="m&m.jpg" alt="M&M"><span>M&M - $100</span><button onclick="addToCart('M&M', 100)">Agregar al carrito</button></li>
+            <li><img src="ritter_sport.jpg" alt="Ritter sport"><span>Ritter sport - $70</span><button onclick="addToCart('Ritter sport', 70)">Agregar al carrito</button></li>
+            <li><img src="toblerone.jpg" alt="Toblerone"><span>Toblerone - $80</span><button onclick="addToCart('Toblerone', 80)">Agregar al carrito</button></li>
+            <li><img src="milka_xxl.jpg" alt="Milka XXL"><span>Milka XXL - $180</span><button onclick="addToCart('Milka XXL', 180)">Agregar al carrito</button></li>
+            <li><img src="aguas_frescas.jpg" alt="Aguas frescas"><span>Aguas frescas - $30</span><button onclick="addToCart('Aguas frescas', 30)">Agregar al carrito</button></li>
+            <li><img src="chocomilk.jpg" alt="Chocomilk"><span>Chocomilk - $35</span><button onclick="addToCart('Chocomilk', 35)">Agregar al carrito</button></li>
+            <li><img src="licuados.jpg" alt="Licuados"><span>Licuados - $50</span><button onclick="addToCart('Licuados', 50)">Agregar al carrito</button></li>
+            <li><img src="malteadas.jpg" alt="Malteadas"><span>Malteadas - $40</span><button onclick="addToCart('Malteadas', 40)">Agregar al carrito</button></li>
+            <li><img src="lata.jpg" alt="Lata"><span>Lata - $22</span><button onclick="addToCart('Lata', 22)">Agregar al carrito</button></li>
+            <li><img src="taparrosca.jpg" alt="Taparrosca"><span>Taparrosca - $24</span><button onclick="addToCart('Taparrosca', 24)">Agregar al carrito</button></li>
+            <li><img src="jugos_jumex.jpg" alt="Jugos Jumex"><span>Jugos Jumex - $25</span><button onclick="addToCart('Jugos Jumex', 25)">Agregar al carrito</button></li>
+            <li><img src="yogur_bebible.jpg" alt="Yogur bebible"><span>Yogur bebible - $20</span><button onclick="addToCart('Yogur bebible', 20)">Agregar al carrito</button></li>
+            <li><img src="gatorade.jpg" alt="Gatorade"><span>Gatorade - $30</span><button onclick="addToCart('Gatorade', 30)">Agregar al carrito</button></li>
+            <li><img src="vitamin_water.jpg" alt="Vitamin water"><span>Vitamin water - $30</span><button onclick="addToCart('Vitamin water', 30)">Agregar al carrito</button></li>
+            <li><img src="electrolit.jpg" alt="Electrolit"><span>Electrolit - $30</span><button onclick="addToCart('Electrolit', 30)">Agregar al carrito</button></li>
+            <li><img src="jazte.jpg" alt="Jazte"><span>Jazte - $25</span><button onclick="addToCart('Jazte', 25)">Agregar al carrito</button></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FoodTiesaDelivery</p>
+    </footer>
+
+    <script>
+        function addToCart(itemName, itemPrice) {
+            console.log("Agregado al carrito:", itemName, "- Precio:", itemPrice);
+        }
+    </script>
+
+
+</body>
+</html>

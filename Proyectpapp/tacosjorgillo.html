@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Tacos Jorgillo</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: #000;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+        main {
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        li img {
+            width: 50px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .add-to-cart {
+            margin-left: auto;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <a href="#">Cuenta</a>
+                <ul>
+                    <li><a href="pagina-cuenta.html">Mi Cuenta</a></li>
+                    <li><a href="historial-pedidos.html">Historial de Pedidos</a></li>
+                    <li><a href="wallet.html">Wallet</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                    <li><a href="promociones.html">Promociones</a></li>
+                    <li><a href="cerrar-sesion.html">Cerrar Sesión</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Menú de Tacos Jorgillo</h1>
+        <ul>
+            <li>
+                <img src="taco_de_canasta.jpg" alt="Taco de canasta">
+                <span>Taco de canasta $14 (chicharron, frijol, mole, picadillo, papa)</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="lonches.jpg" alt="Lonches">
+                <span>Lonches $43 (lomo, pierna, jamon, frijoles, panela)</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="chilaquiles.jpg" alt="Chilaquiles">
+                <span>Chilaquiles $45 (verdes, rojos)</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="gorditas.jpg" alt="Gorditas">
+                <span>Gorditas $30 (chicharron, lomo)</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="comida_del_dia.jpg" alt="Comida del día">
+                <span>Comida del día $70 (lonche de chicharron, bistec de res, pollo a la plancha, chuleta ahumada)</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="huevos.jpg" alt="Huevos">
+                <span>Huevos $53 (revueltos, a la mexicana, estrellados)</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="taco_dorado.jpg" alt="Taco dorado con carne">
+                <span>Taco dorado con carne $24 (papa, frijol)</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="taco_dorado.jpg" alt="Taco dorado sencillo">
+                <span>Taco dorado sencillo $14 (papa, frijol)</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="quesadilla.jpg" alt="Quesadilla">
+                <span>Quesadilla sencilla $25</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="quesadilla.jpg" alt="Quesadilla">
+                <span>Quesadilla con carne $40</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="tostada.jpg" alt="Tostada">
+                <span>Tostada $25 (jamon, carnitas, cueritos, panela, pierna)</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="torta_ahogada.jpg" alt="Torta ahogada">
+                <span>Torta ahogada $43</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="paleta_de_agua.jpg" alt="Paleta de agua">
+                <span>Paleta de agua $20</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="paletas_de_crema.jpg" alt="Paletas de crema">
+                <span>Paletas de crema $25</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="molletes.jpg" alt="Molletes">
+                <span>Molletes dulces o salados 1 pz $25</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="molletes.jpg" alt="Molletes">
+                <span>Molletes dulces o salados 2 pzs $43</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="malteadas.jpg" alt="Malteadas">
+                <span>Malteadas $45 (chocolate, fresa, ferrero, vainilla)</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="chocomilk.jpg" alt="Chocomilk">
+                <span>Chocomilk $25</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="agua_del_dia.jpg" alt="Agua del día">
+                <span>Agua del día $20</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="jugos_naturales.jpg" alt="Jugos naturales">
+                <span>Jugos naturales $30</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="fresas_con_crema.jpg" alt="Fresas con crema">
+                <span>Fresas con crema $40</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FoodTiesaDelivery</p>
+    </footer>
+
+</body>
+</html>

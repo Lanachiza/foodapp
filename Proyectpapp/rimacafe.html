@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rima Café</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: #000;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+        main {
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        li img {
+            width: 50px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .add-to-cart {
+            margin-left: auto;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <a href="#">Cuenta</a>
+                <ul>
+                    <li><a href="pagina-cuenta.html">Mi Cuenta</a></li>
+                    <li><a href="historial-pedidos.html">Historial de Pedidos</a></li>
+                    <li><a href="wallet.html">Wallet</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                    <li><a href="promociones.html">Promociones</a></li>
+                    <li><a href="cerrar-sesion.html">Cerrar Sesión</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Rima Café</h1>
+        <h2>Menú</h2>
+        <ul>
+            <li><img src="espresso.jpg" alt="Espresso"><span>Espresso - $34</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="espresso_doble.jpg" alt="Espresso doble"><span>Espresso doble - $40</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="espresso_cortado.jpg" alt="Espresso cortado"><span>Espresso cortado - $45</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="americano_espresso.jpg" alt="Americano espresso"><span>Americano espresso - $5</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="capuccino.jpg" alt="Capuccino"><span>Capuccino - $69</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="latte.jpg" alt="Latte"><span>Latte - $69</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="mocha.jpg" alt="Mocha"><span>Mocha - $79</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="latte_caramelo.jpg" alt="Latte caramelo"><span>Latte caramelo - $79</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="chai.jpg" alt="Chai"><span>Chai - $71</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="matcha.jpg" alt="Matcha"><span>Matcha - $70</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="taro.jpg" alt="Taro"><span>Taro - $82</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="te.jpg" alt="Te"><span>Te - $51</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="tisana.jpg" alt="Tisana"><span>Tisana - $68</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="chocolate.jpg" alt="Chocolate"><span>Chocolate - $68</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="bebida_temporada.jpg" alt="Bebida de temporada"><span>Bebida de temporada - $85</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="prensa_francesa.jpg" alt="Prensa francesa"><span>Prensa francesa - $65</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="chemex.jpg" alt="Chemex"><span>Chemex - $65</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="v60.jpg" alt="V60"><span>V60 - $62</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="frappe_cafe.jpg" alt="Frappe café"><span>Frappe café - $74</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="frappe_caramelo.jpg" alt="Frappe caramelo"><span>Frappe caramelo - $84</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="frappe_mocha.jpg" alt="Frappe mocha"><span>Frappe mocha - $84</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="frappe_chai.jpg" alt="Frappe chai"><span>Frappe chai - $89</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="frappe_taro.jpg" alt="Frappe taro"><span>Frappe taro - $85</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="frappe_sabores.jpg" alt="Frappe sabores"><span>Frappe sabores - $84</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="frappe_cookies.jpg" alt="Frappe cookies"><span>Frappe cookies - $67</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="cold_brew.jpg" alt="Cold brew"><span>Cold brew - $72</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="nitro_cold_brew.jpg" alt="Nitro cold brew"><span>Nitro cold brew - $69</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="te_rima.jpg" alt="Te rima"><span>Te rima - $73</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="tisana_rima.jpg" alt="Tisana rima"><span>Tisana rima - $24</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="coca_cola.jpg" alt="Coca cola 500 ml"><span>Coca cola 500 ml - $20</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="agua_natural.jpg" alt="Agua natural"><span>Agua natural - $20</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="agua_mineral.jpg" alt="Agua mineral"><span>Agua mineral - $40</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="san_pellegrino.jpg" alt="San Pellegrino"><span>San Pellegrino - $40</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="red_cola.jpg" alt="Red cola"><span>Red cola - $20</span><button class="add-to-cart">Agregar al carrito</button></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FoodTiesaDelivery</p>
+    </footer>
+
+</body>
+</html>

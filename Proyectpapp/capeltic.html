@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capeltic</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: #000;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+        main {
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu-item img {
+            width: 100px;
+            margin-right: 20px;
+        }
+        .menu-item button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .menu-item button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <a href="#">Cuenta</a>
+                <ul>
+                    <li><a href="pagina-cuenta.html">Mi Cuenta</a></li>
+                    <li><a href="historial-pedidos.html">Historial de Pedidos</a></li>
+                    <li><a href="wallet.html">Wallet</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                    <li><a href="promociones.html">Promociones</a></li>
+                    <li><a href="cerrar-sesion.html">Cerrar Sesión</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Capeltic</h1>
+        <h2>Menú</h2>
+        <ul>
+            <li class="menu-item">
+                <img src="expresso.jpg" alt="Expresso">
+                <span>Expresso - $38</span>
+                <button onclick="addToCart('Expresso', 38)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="expresso_doble.jpg" alt="Expresso Doble">
+                <span>Expresso doble - $45</span>
+                <button onclick="addToCart('Expresso doble', 45)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="americano_capeltic.jpg" alt="Americano Capeltic">
+                <span>Americano capeltic - $49</span>
+                <button onclick="addToCart('Americano capeltic', 49)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="capuccino.jpg" alt="Capuccino">
+                <span>Capuccino - $58</span>
+                <button onclick="addToCart('Capuccino', 58)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="capuccino_italiano.jpg" alt="Capuccino Italiano">
+                <span>Capuccino italiano - $57</span>
+                <button onclick="addToCart('Capuccino italiano', 57)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="latte_chabtic.jpg" alt="Latte Chabtic">
+                <span>Latte chabtic - $66</span>
+                <button onclick="addToCart('Latte chabtic', 66)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="latte.jpg" alt="Latte">
+                <span>Latte - $65</span>
+                <button onclick="addToCart('Latte', 65)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="moka.jpg" alt="Moka">
+                <span>Moka - $68</span>
+                <button onclick="addToCart('Moka', 68)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="moka_blanco.jpg" alt="Moka Blanco">
+                <span>Moka blanco - $71</span>
+                <button onclick="addToCart('Moka blanco', 71)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="chai_sucio.jpg" alt="Chai Sucio">
+                <span>Chai sucio - $79</span>
+                <button onclick="addToCart('Chai sucio', 79)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="cappuccino_frappe.jpg" alt="Cappuccino Frappe">
+                <span>Cappuccino frappe - $64</span>
+                <button onclick="addToCart('Cappuccino frappe', 64)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="chocolate_menta_frappe.jpg" alt="Chocolate con Menta Frappe">
+                <span>Chocolate con menta frappe - $67</span>
+                <button onclick="addToCart('Chocolate con menta frappe', 67)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="frappe_chabtic.jpg" alt="Frappe Chabtic">
+                <span>Frappe chabtic - $65</span>
+                <button onclick="addToCart('Frappe chabtic', 65)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="chai_frappe.jpg" alt="Chai Frappe">
+                <span>Chai frappe - $71</span>
+                <button onclick="addToCart('Chai frappe', 71)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="moka_frappe.jpg" alt="Moka Frappe">
+                <span>Moka frappe - $67</span>
+                <button onclick="addToCart('Moka frappe', 67)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="moka_blanco_frappe.jpg" alt="Moka Blanco Frappe">
+                <span>Moka blanco frappe - $71</span>
+                <button onclick="addToCart('Moka blanco frappe', 71)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="cookies_cream_frappe.jpg" alt="Cookies & Cream Frappe">
+                <span>Cookies & cream frappe - $68</span>
+                <button onclick="addToCart('Cookies & cream frappe', 68)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="matcha_latte_frappe.jpg" alt="Matcha Latte Frappe">
+                <span>Matcha latte frappe - $78</span>
+                <button onclick="addToCart('Matcha latte frappe', 78)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="smoothie_yogurt.jpg" alt="Smoothie de Yogurt Molecular">
+                <span>Smoothie de yougurt molecular - $80</span>
+                <button onclick="addToCart('Smoothie de yougurt molecular', 80)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="cookies_cream.jpg" alt="Cookies & Cream">
+                <span>Cookies & cream - $65</span>
+                <button onclick="addToCart('Cookies & cream', 65)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="chai_latte.jpg" alt="Chai Latte">
+                <span>Chai latte - $69</span>
+                <button onclick="addToCart('Chai latte', 69)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="matcha_latte.jpg" alt="Matcha Latte">
+                <span>Matcha latte - $66</span>
+                <button onclick="addToCart('Matcha latte', 66)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="chocolate_caliente.jpg" alt="Chocolate Caliente">
+                <span>Chocolate caliente - $58</span>
+                <button onclick="addToCart('Chocolate caliente', 58)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="chocolate_blanco.jpg" alt="Chocolate Blanco">
+                <span>Chocolate blanco - $63</span>
+                <button onclick="addToCart('Chocolate blanco', 63)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="te.jpg" alt="Te">
+                <span>Te - $47</span>
+                <button onclick="addToCart('Te', 47)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="tisana.jpg" alt="Tisana">
+                <span>Tisana - $53</span>
+                <button onclick="addToCart('Tisana', 53)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="soda_chabtic.jpg" alt="Soda Chabtic">
+                <span>Soda chabtic - $64</span>
+                <button onclick="addToCart('Soda chabtic', 64)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="soda_italiana.jpg" alt="Soda Italiana">
+                <span>Soda italiana - $57</span>
+                <button onclick="addToCart('Soda italiana', 57)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="chamoyada.jpg" alt="Chamoyada">
+                <span>Chamoyada - $54</span>
+                <button onclick="addToCart('Chamoyada', 54)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="nuestra_mezcla.jpg" alt="Nuestra Mezcla">
+                <span>Nuestra mezcla - $172</span>
+                <button onclick="addToCart('Nuestra mezcla', 172)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="organico_gourmet.jpg" alt="Organico Gourmet">
+                <span>Organico gourmet - $196</span>
+                <button onclick="addToCart('Organico gourmet', 196)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="descafeinado.jpg" alt="Descafeinado">
+                <span>Descafeinado - $219</span>
+                <button onclick="addToCart('Descafeinado', 219)">Agregar al carrito</button>
+            </li>
+            <li class="menu-item">
+                <img src="granos_cafe_chocolate.jpg" alt="Granos de Cafe Cubiertos de Chocolate">
+                <span>Granos de cafe cubiertos de chocolate - $64</span>
+                <button onclick="addToCart('Granos de cafe cubiertos de chocolate', 64)">Agregar al carrito</button>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FoodTiesaDelivery</p>
+    </footer>
+
+    <script>
+        function addToCart(itemName, itemPrice) {
+            console.log("Agregado al carrito:", itemName, "- Precio:", itemPrice);
+        }
+    </script>
+
+</body>
+</html>

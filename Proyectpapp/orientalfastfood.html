@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oriental Fast Food</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: #000;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+        main {
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        li img {
+            width: 50px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .add-to-cart {
+            margin-left: auto;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <a href="#">Cuenta</a>
+                <ul>
+                    <li><a href="pagina-cuenta.html">Mi Cuenta</a></li>
+                    <li><a href="historial-pedidos.html">Historial de Pedidos</a></li>
+                    <li><a href="wallet.html">Wallet</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                    <li><a href="promociones.html">Promociones</a></li>
+                    <li><a href="cerrar-sesion.html">Cerrar Sesión</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Oriental Fast Food</h1>
+        <h2>Menú</h2>
+        <ul>
+            <li><img src="arroz_frito_completo.jpg" alt="Arroz frito completo"><span>Arroz frito completo - $30</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="arroz_frito_media.jpg" alt="Arroz frito media"><span>Arroz frito media - $26</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="guisado_completo.jpg" alt="Guisado completo"><span>Guisado completo - $40</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="pollo_capeado.jpg" alt="Pollo capeado"><span>Pollo capeado - $37</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="pollo_capeado_media.jpg" alt="Pollo capeado media"><span>Pollo capeado media - $29</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="rollo_primavera.jpg" alt="Rollo primavera"><span>Rollo primavera - $18</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="rollo_salchicha.jpg" alt="Rollo salchicha"><span>Rollo salchicha - $18</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="huevos_1_ingrediente.jpg" alt="Huevos con 1 ingrediente"><span>Huevos con 1 ingrediente - $33</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="omelet_1_ingrediente.jpg" alt="Omelet con 1 ingrediente y queso"><span>Omelet con 1 ingrediente y queso - $38</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="chilaquiles_chicos.jpg" alt="Chilaquiles chicos"><span>Chilaquiles chicos - $37</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="quesadilla_frita.jpg" alt="Quesadilla frita"><span>Quesadilla frita (pierna, chicharron, champiñon, chorizo con papas o natural) - $38</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="molletes.jpg" alt="Molletes"><span>Molletes - $28</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="huevo_chilaquiles_frijoles.jpg" alt="Huevos + chilaquiles + frijoles"><span>Huevos + chilaquiles + frijoles - $62</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="omelet_chilaquiles_frijoles.jpg" alt="Omelet + chilaquiles + frijoles"><span>Omelet + chilaquiles + frijoles - $67</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="jugo_naranja.jpg" alt="Jugo de naranja"><span>Jugo de naranja - $28</span><button class="add-to-cart">Agregar al carrito</button></li>
+            <li><img src="chocomilk.jpg" alt="Chocomilk"><span>Chocomilk - $22</span><button class="add-to-cart">Agregar al carrito</button></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FoodTiesaDelivery</p>
+    </footer>
+
+</body>
+</html>
